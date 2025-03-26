@@ -143,7 +143,7 @@
 
 期末考试形式：纸质考试
 
-个人建议：数电部分看懂魏达老师的网课视频，模电部分看猴博士的视频https://www.bilibili.com/video/BV1ZK4y197Z5/?spm_id_from=333.337.search-card.all.click&vd_source=d289fdb1540decb4c2d22ceb8afccb8c
+个人建议：数电部分看懂魏达老师的网课视频，模电部分看猴博士的视频[BiliBili视频跳转](https://www.bilibili.com/video/BV1ZK4y197Z5/?spm_id_from=333.337.search-card.all.click&vd_source=d289fdb1540decb4c2d22ceb8afccb8c)
 。不用看后续，免费的视频刚好覆盖复习范围。做解忧的题
 
 #### 面向对象程序设计
@@ -165,8 +165,8 @@
 
 期末考试形式：做项目并答辩，没记错的话优秀、中等、及格的名额是相对固定的。并且不是一个组一个分，而是区分到个人。也就是说，你如果想拿个高分，最好项目的需求全部实现且在你的小组工作量中占据比较大的份额
 
-个人建议：应该可以算步入大学以来第一个正经的小组作业，在这里你将邂逅各式各样（？）的队友。难度不算大，竞争也不算大。认真做完分就不会低了，如果你特别特别想拿90以上并且怕自己仅仅完成项目需求无法在众人之间突出时。可以考虑实现UI效果，即实现一个交互界面。可以考虑使用Easy-X(可以参考我的仓库https://github.com/WilliamPockey/Supermarket-Management-System
-但我的仓库年久失修，代码不一定能够运行，建议如果想使用Easy-X但碰到Easy-X有什么不会的才参考)，PyQT等。但注意链表部分，即后端必须用C语言实现（课程要求）
+个人建议：应该可以算步入大学以来第一个正经的小组作业，在这里你将邂逅各式各样（？）的队友。难度不算大，竞争也不算大。认真做完分就不会低了，如果你特别特别想拿90以上并且怕自己仅仅完成项目需求无法在众人之间突出时。可以考虑实现UI效果，即实现一个交互界面。可以考虑使用Easy-X(可以参考我的仓库[基于Easy-X的超市管理系统](https://github.com/WilliamPockey/Supermarket-Management-System)
+但我的仓库年久失修，环境需要使用VS自己配置Easy-X，建议如果想使用Easy-X但碰到有什么不会的才参考)，PyQT等。但注意链表部分，即后端必须用C语言实现（课程要求）
 
 #### 大学生职业发展与就业创业指导I*
 课程内容：刷网课
@@ -205,7 +205,7 @@
 
 期末考试形式：纸质考试
 
-个人建议：老师的PPT很烂，全英文（我们当年）。建议B站看翼云图灵的课https://www.bilibili.com/video/BV1Ba4y1V7GD/?spm_id_from=333.1387.homepage.video_card.click
+个人建议：老师的PPT很烂，全英文（我们当年）。建议B站看翼云图灵的课[BiliBili视频链接跳转](https://www.bilibili.com/video/BV1Ba4y1V7GD/?spm_id_from=333.1387.homepage.video_card.click)
 （神中神），有些人可能会看王道（一个专注于计算机考研辅导的机构），但王道的课程与课程要求范围差得有点多
 
 #### 数据结构
@@ -227,7 +227,7 @@
 
 期末考试形式：无，做满8个（好像是）实验就可以
 
-个人建议：就是做个实验然后写个报告。参考学长/学姐的资料自己计算即可，这里分享一个https://github.com/userElaina/jlu-physics-lab-report
+个人建议：就是做个实验然后写个报告。参考学长/学姐的资料自己计算即可，这里分享一个[GitHub链接跳转](https://github.com/userElaina/jlu-physics-lab-report)
 （神中神）。就是实验报告要手写比较累
 ## 大二下
 ### 必修课程
@@ -250,7 +250,7 @@
 
 期末考试形式：纸质考试
 
-个人建议：这门课应该是数学类最简单的一门课了。建议看B站高数叔的网课https://www.bilibili.com/video/BV15o4y1R74P/?spm_id_from=333.337.search-card.all.click&vd_source=d289fdb1540decb4c2d22ceb8afccb8c
+个人建议：这门课应该是数学类最简单的一门课了。建议看B站高数叔的网课[BiliBili视频跳转](https://www.bilibili.com/video/BV15o4y1R74P/?spm_id_from=333.337.search-card.all.click&vd_source=d289fdb1540decb4c2d22ceb8afccb8c)
 （神中神），简短易懂。小时候看这集，第二天就考了90+😋
 
 #### 算法设计与分析
@@ -265,7 +265,7 @@
 
 期末考试形式：纸质考试
 
-个人建议：参考https://blog.csdn.net/m0_62890769/article/details/131162597?spm=1001.2014.3001.5502
+个人建议：参考[CSDN链接跳转](https://blog.csdn.net/m0_62890769/article/details/131162597?spm=1001.2014.3001.5502)
 ，这门课主要考察PPT上的知识点，背诵然后理解就行
 
 #### 计算机职业道德与学术技能
@@ -311,7 +311,7 @@
 
 个人建议：实践环节选修课之一。建议跟网页设计与网站建设一起选，可以一个项目两边用。不过WEB程序设计需要加上后端（无所谓，因为一般WEB程序设计在学期后面，可以慢慢写）
 
-另外欢迎访问我的当时写的项目，我把它部署到了我的服务器上😎(http://107.172.3.166/)
+另外欢迎访问我的当时写的项目，我把它部署到了我的服务器上😎([仿BiliBili视频网站](http://107.172.3.166/))
 
 #### 网页设计与网站建设#
 课程内容：学习WEB网页设计相关知识（没错就是跟上面反过来的😈），这个主要讲HTML、CSS、JS三剑客，不怎么涉及后端
@@ -354,7 +354,7 @@
 
 期末考试形式：纸质考试
 
-个人建议：B站看湖科大的讲解视频https://www.bilibili.com/video/BV1c4411d7jb/?spm_id_from=333.337.search-card.all.click
+个人建议：B站看湖科大的讲解视频[BiliBili视频跳转](https://www.bilibili.com/video/BV1c4411d7jb/?spm_id_from=333.337.search-card.all.click)
 （神中神），然后研究PPT（PPT比较新且质量不错，这或许就是101计划🤗）
 
 #### 编译原理与实现
@@ -362,7 +362,7 @@
 
 期末考试形式：纸质考试
 
-个人建议：知识点难度比较大，且PPT很老，好像有笔记可以问学长学姐要。另外参考https://blog.csdn.net/KQwangxi/article/details/123939921?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522fe46461cf62eb94e89aa3670b6f148d4%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=fe46461cf62eb94e89aa3670b6f148d4&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-123939921-null-null.142^v101^pc_search_result_base7&utm_term=%E5%90%89%E6%9E%97%E5%A4%A7%E5%AD%A6%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86&spm=1018.2226.3001.4187
+个人建议：知识点难度比较大，且PPT很老，好像有笔记可以问学长学姐要。另外参考[CSDN链接跳转](https://blog.csdn.net/KQwangxi/article/details/123939921?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522fe46461cf62eb94e89aa3670b6f148d4%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=fe46461cf62eb94e89aa3670b6f148d4&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-123939921-null-null.142^v101^pc_search_result_base7&utm_term=%E5%90%89%E6%9E%97%E5%A4%A7%E5%AD%A6%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86&spm=1018.2226.3001.4187)
 
 ### 选修课程
 #### 多媒体技术
@@ -561,7 +561,7 @@
 
 期末考试形式：无，做满三个实验即可
 
-个人建议：如果你的能力强并且计算机组成原理基础扎实。可以考虑选修这门课，你会觉得这门课比另外两门课简单很多。可以参考中山大学的大佬的代码https://blog.csdn.net/w_weilan/article/details/84349845?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522b7c9cde4e69a539e36d69f016c231fb4%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=b7c9cde4e69a539e36d69f016c231fb4&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-84349845-null-null.142^v101^pc_search_result_base7&utm_term=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E5%8D%95%E5%91%A8%E6%9C%9Fcpu&spm=1018.2226.3001.4187
+个人建议：如果你的能力强并且计算机组成原理基础扎实。可以考虑选修这门课，你会觉得这门课比另外两门课简单很多。可以参考中山大学的大佬的代码[CSDN链接跳转](https://blog.csdn.net/w_weilan/article/details/84349845?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522b7c9cde4e69a539e36d69f016c231fb4%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=b7c9cde4e69a539e36d69f016c231fb4&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-84349845-null-null.142^v101^pc_search_result_base7&utm_term=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E5%8D%95%E5%91%A8%E6%9C%9Fcpu&spm=1018.2226.3001.4187)
 。每个实验做完都需要找老师答辩，老师人还是很好的，不会太为难，不过一定要看懂细节掌握相关知识再去。如果你的能力特别强，甚至可以找老师聊聊，参加一个硬件设计相关的赛事（很有含金量）
 ## 大三下
 ### 必修课程
@@ -592,7 +592,7 @@
 
 期末考试形式：开卷纸质考试
 
-个人建议：照着做就行，还是比较简单的。实验报告可以参考https://blog.csdn.net/qq_38941327/article/details/90647225
+个人建议：照着做就行，还是比较简单的。实验报告可以参考[CSDN链接跳转](https://blog.csdn.net/qq_38941327/article/details/90647225)
 
 #### 数据库系统原理课程设计
 课程内容：结合SQL等数据库语言设计一个学生选课系统
