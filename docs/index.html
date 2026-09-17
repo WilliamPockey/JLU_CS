@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JLU_CS 生存指南 · 吉林大学计算机学院选课与学习一站式指南</title>
+<meta name="description" content="吉林大学计算机学院生存技巧、课程难度与避雷、选课推荐、配套网课、期末复习与考研经验的一站式指南。">
+<meta name="keywords" content="吉林大学, JLU, 计算机学院, 选课, 课程难度, 生存指北, 考研, 408, 吉大计院">
+<meta name="theme-color" content="#f7f9f7">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JLU_CS 生存指南 · 吉林大学计算机学院">
+<meta property="og:description" content="课程速查 · 选课避雷 · 学习资源 · 考研经验,一站式生存指南。">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#courses">跳到课程速查</a>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<!-- ============ 顶栏 ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">🌱</span>
+      <span class="brand-text">
+        <b>JLU_CS</b>
+        <i>生存指南</i>
+      </span>
+    </a>
+
+    <nav class="topnav" aria-label="主导航">
+      <a href="#preface">序章</a>
+      <a href="#courses">课程速查</a>
+      <a href="#guide">生存指北</a>
+      <a href="#kaoyan">考研专区</a>
+      <a href="#resources">资源</a>
+    </nav>
+
+    <div class="topbar-tools">
+      <button class="fav-btn" id="favBtn" type="button" title="只看收藏的课程">
+        <span aria-hidden="true">☆</span><span class="fav-count" id="favCount">0</span>
+      </button>
+      <button class="icon-btn" id="themeBtn" type="button" title="切换深浅色" aria-label="切换深浅色">
+        <span class="ico-sun" aria-hidden="true">☀</span>
+        <span class="ico-moon" aria-hidden="true">☾</span>
+      </button>
+      <a class="icon-btn gh" href="https://github.com/WilliamPockey/JLU_CS" target="_blank" rel="noopener" title="GitHub 仓库">
+        <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.04-2.12 0 0 .75-.24 2.46.92a8.5 8.5 0 0 1 2.24-.3c.76 0 1.52.1 2.24.3 1.71-1.16 2.46-.92 2.46-.92.4 1.1.12 1.92.06 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.55.74.55 1.49 0 1.08-.01 1.95-.01 2.22 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      </a>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="打开目录" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 侧边目录 ============ -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="sidebar" id="sidebar" aria-label="目录">
+  <div class="sidebar-inner">
+    <div class="side-block">
+      <div class="side-title">指南结构</div>
+      <a class="side-link" href="#preface">🌟 前言 · 项目宗旨</a>
+      <a class="side-link" href="#notes">📌 备注 · 图例</a>
+      <a class="side-link" href="#courses">📚 学期课程速查</a>
+    </div>
+    <div class="side-block" id="termNav">
+      <div class="side-title">按学期跳转</div>
+      <!-- 由 app.js 生成 -->
+    </div>
+    <div class="side-block">
+      <div class="side-title">生存指北</div>
+      <div id="chapterNav"><!-- 由 app.js 生成 --></div>
+    </div>
+    <div class="side-block">
+      <a class="side-link" href="#resources">📦 其他开源资料</a>
+      <a class="side-link" href="#feedback">💬 反馈与贡献</a>
+    </div>
+  </div>
+</aside>
+
+<main class="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" id="top">
+    <div class="hero-deco" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">吉林大学 · 计算机科学与技术学院</p>
+      <h1 class="hero-title">计院生存指南<span class="hero-dot">。</span></h1>
+      <p class="hero-sub">生存技巧 · 选课避雷 · 学习资源一站式整理<br>
+        <em>为减少选课信息差做出一点奉献 🤗</em></p>
+
+      <div class="hero-search">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.38 1.42-1.41-5.39-5.39A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12Z"/></svg>
+        <input id="heroSearch" type="search" placeholder="搜索课程、老师、网课、复习建议…（按 / 快速聚焦）" autocomplete="off" aria-label="搜索课程">
+        <kbd>/</kbd>
+      </div>
+
+      <div class="hero-stats" id="heroStats"><!-- 由 app.js 生成 --></div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#courses">开始查课 →</a>
+        <a class="btn" href="#guide">看生存指北</a>
+        <a class="btn" href="https://blog.csdn.net/m0_62890769?type=blog" target="_blank" rel="noopener">CSDN @苏子寒</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 前言 ============ -->
+  <section class="section" id="preface">
+    <div class="section-head">
+      <span class="section-icon">🌟</span>
+      <h2>前言</h2>
+      <p class="section-desc">这份指南解决什么问题，以及它不适合谁。</p>
+    </div>
+    <div class="two-col">
+      <article class="panel mint">
+        <h3>🎯 项目宗旨</h3>
+        <blockquote>吉林大学计算机学院生存技巧，主要介绍课程内容、推荐老师、网课以及学习技巧</blockquote>
+        <ul class="ticks">
+          <li>详尽的<b>课程内容介绍</b></li>
+          <li>学长学姐的<b>选课推荐</b></li>
+          <li>B 站 / CSDN 的<b>配套网课</b></li>
+          <li>期末复习的<b>应试技巧</b></li>
+        </ul>
+      </article>
+      <article class="panel blush">
+        <h3>⚠️ 温馨提示</h3>
+        <blockquote>由于人和人的体质不能一概而论 🧐，选课推荐不一定适合每个人，请结合自身情况斟酌</blockquote>
+        <ul class="ticks">
+          <li>记忆偏差 + 课程改动，内容可能与实际有差异</li>
+          <li>欢迎在 <a href="https://github.com/WilliamPockey/JLU_CS/issues" target="_blank" rel="noopener">Issue</a> 指正</li>
+          <li>欢迎 <b>Pull Request</b> 大程度修缮</li>
+          <li>觉得有帮助？给仓库点个 <b>Star</b> 吧！</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 备注 / 图例 ============ -->
+  <section class="section" id="notes">
+    <div class="section-head">
+      <span class="section-icon">📌</span>
+      <h2>备注 · 阅读前必看</h2>
+      <p class="section-desc">看懂这些标记，后面的课程卡片就好读了。</p>
+    </div>
+    <div class="legend">
+      <div class="legend-row">
+        <span class="legend-label">难度</span>
+        <div class="legend-items" id="legendLevel"><!-- app.js --></div>
+      </div>
+      <div class="legend-row">
+        <span class="legend-label">标记</span>
+        <div class="legend-items" id="legendBadge"><!-- app.js --></div>
+      </div>
+      <ol class="notes-list">
+        <li>纯水课会标注<b>「水课」</b>，不必给予什么关注</li>
+        <li>选修课程带<b>「易高分」</b>标记的表示比较容易拿高分</li>
+        <li>做项目一般指小组一起做，有些课程要求小组人数（但大部分不要）</li>
+        <li>期末考试形式的纸质考试若没有提及开卷则都是闭卷</li>
+        <li>未提及的选修课，可以上学院官网查询上一年是否安排过考试</li>
+        <li>没提到的资料可以去 <a href="https://www.bilibili.com" target="_blank" rel="noopener">BiliBili</a> 或者 <a href="https://blog.csdn.net" target="_blank" rel="noopener">CSDN</a> 搜（一定要善用！）</li>
+      </ol>
+    </div>
+
+    <h3 class="sub-h">🚫 不做详细介绍的四类课</h3>
+    <div class="skip-grid" id="skipGrid"><!-- app.js --></div>
+  </section>
+
+  <!-- ============ 课程速查 ============ -->
+  <section class="section" id="courses">
+    <div class="section-head">
+      <span class="section-icon">📚</span>
+      <h2>学期课程速查</h2>
+      <p class="section-desc">共 <b id="totalCount">0</b> 门课程。可组合筛选；选修课开课学期可能有误，查不到请直接搜索。</p>
+    </div>
+
+    <div class="toolbar" id="toolbar">
+      <div class="tool-search">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.38 1.42-1.41-5.39-5.39A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12Z"/></svg>
+        <input id="search" type="search" placeholder="搜索课名 / 内容 / 考试 / 建议 / 资源" autocomplete="off" aria-label="搜索课程">
+        <button class="clear-btn" id="clearBtn" type="button" hidden aria-label="清空搜索">✕</button>
+      </div>
+
+      <div class="filter-row" id="termFilters" role="group" aria-label="按学期筛选"></div>
+      <div class="filter-row" id="kindFilters" role="group" aria-label="按类别筛选"></div>
+      <div class="filter-row" id="lvFilters" role="group" aria-label="按难度筛选"></div>
+      <div class="filter-row badges" id="badgeFilters" role="group" aria-label="按标记筛选"></div>
+
+      <div class="tool-foot">
+        <span class="result-hint" id="resultHint" aria-live="polite"></span>
+        <div class="tool-switches">
+          <label class="switch"><input type="checkbox" id="compactToggle"><span>只看标题</span></label>
+          <label class="switch"><input type="checkbox" id="favOnlyToggle"><span>只看收藏</span></label>
+          <button class="text-btn" id="resetBtn" type="button">重置筛选</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards" id="cards"><!-- app.js --></div>
+    <p class="empty" id="emptyTip" hidden>没有匹配的课程 🌵 试试换个关键词，或 <button class="linklike" id="emptyReset" type="button">重置筛选</button></p>
+  </section>
+
+  <!-- ============ 生存指北 ============ -->
+  <section class="section" id="guide">
+    <div class="section-head">
+      <span class="section-icon">🧭</span>
+      <h2>吉大计院生存指北</h2>
+      <p class="section-desc">通往大佬的修炼手册 ✨</p>
+    </div>
+    <div class="chapters" id="chapterList"><!-- app.js --></div>
+
+    <article class="chapter-body" id="ch5">
+      <header class="ch-head"><span class="ch-no">第五章</span><h3>副本选择困难症</h3><p>机器学习 or 深度学习是什么？是好吃的吗？</p><span class="ch-tag done">✅ 已更新</span></header>
+      <div class="prose" id="ch5Body"></div>
+    </article>
+  </section>
+
+  <!-- ============ 考研专区 ============ -->
+  <section class="section" id="kaoyan">
+    <div class="section-head">
+      <span class="section-icon">🎯</span>
+      <h2>闭关修炼指南</h2>
+      <p class="section-desc">当考研教室的灯亮成永夜时 · 11408 400+ 一战上岸浙大</p>
+    </div>
+    <article class="chapter-body">
+      <header class="ch-head"><span class="ch-no">第六章</span><h3>闭关修炼指南</h3><p>当考研教室的灯亮成永夜时</p><span class="ch-tag done">✅ 已更新</span></header>
+      <div class="prose" id="ch6Body"></div>
+    </article>
+    <article class="chapter-body" id="ch7">
+      <header class="ch-head"><span class="ch-no">第七章</span><h3>体制内的隐藏关卡</h3><p>从申论模板到政审迷踪的通关密码</p><span class="ch-tag todo">📝 敬请期待</span></header>
+      <div class="prose" id="ch7Body"></div>
+    </article>
+  </section>
+
+  <!-- ============ 资源 ============ -->
+  <section class="section" id="resources">
+    <div class="section-head">
+      <span class="section-icon">📦</span>
+      <h2>其他资料</h2>
+      <p class="section-desc">社区里值得收藏的开源资料。</p>
+    </div>
+    <div class="res-grid" id="resGrid"><!-- app.js --></div>
+  </section>
+
+  <!-- ============ 反馈 / 页脚 ============ -->
+  <footer class="footer" id="feedback">
+    <div class="footer-cta">
+      <h2>觉得有帮助？</h2>
+      <p>如果本文与实际有差异，欢迎在 Issue 指正；也欢迎 Pull Request 一起修缮。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/WilliamPockey/JLU_CS" target="_blank" rel="noopener">⭐ Star 一下</a>
+        <a class="btn" href="https://github.com/WilliamPockey/JLU_CS/issues/new" target="_blank" rel="noopener">💬 提交 Issue</a>
+        <a class="btn" href="https://github.com/WilliamPockey" target="_blank" rel="noopener">GitHub @WilliamPockey</a>
+      </div>
+    </div>
+    <p class="footer-note">
+      Made with 💕 by <a href="https://github.com/WilliamPockey">WilliamPockey</a> ·
+      内容源自动维护的 <a href="https://github.com/WilliamPockey/JLU_CS/blob/main/README.md">README.md</a> ·
+      最后更新 2026/06 · v2.0
+    </p>
+  </footer>
+</main>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部" hidden>↑</button>
+
+<script src="./assets/js/data.courses.js"></script>
+<script src="./assets/js/data.guide.js"></script>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>

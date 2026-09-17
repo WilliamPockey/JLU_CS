@@ -14,6 +14,14 @@
 
 *为减少选课信息差做出一点奉献 🤗*
 
+<br/>
+
+### 🌐 [**点我进入网页版生存指南 →**](https://williampockey.github.io/JLU_CS/)
+
+[![Web](https://img.shields.io/badge/网页版-在线浏览-4fa88f?style=for-the-badge&logo=githubpages&logoColor=white)](https://williampockey.github.io/JLU_CS/)
+
+> 小清新排版 · 课程搜索 / 多维筛选 / 收藏选课单 · 手机端同样好用(Vibe Coding还是太好用了🤗)
+
 </div>
 
 ---
@@ -22,10 +30,10 @@
 
 <div align="center">
 
-| 🏠 序章 | 📚 课程速查 | 🧭 生存指北 | 🎯 考研专区 | 📦 其他资料 |
-|:---:|:---:|:---:|:---:|:---:|
-| [前言](#-前言) | [大一](#-大一) | [指北目录](#-吉大计院生存指北) | [考研经验](#-第六章-闭关修炼指南当考研教室的灯亮成永夜时) | [开源资料](#-其他资料) |
-| [备注](#-备注) | [大二](#-大二) | [AI入门](#-第五章-副本选择困难症机器学习-or-深度学习是什么是好吃的吗) | [复试指南](#11复试如何准备) | [Issues反馈](#-前言) |
+| 🌐 网页版 | 🏠 序章 | 📚 课程速查 | 🧭 生存指北 | 🎯 考研专区 | 📦 其他资料 |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| [课程速查](https://williampockey.github.io/JLU_CS/#courses) | [前言](#-前言) | [大一](#-大一) | [指北目录](#-吉大计院生存指北) | [考研经验](#-第六章-闭关修炼指南当考研教室的灯亮成永夜时) | [开源资料](#-其他资料) |
+| [考研专区](https://williampockey.github.io/JLU_CS/#kaoyan) | [备注](#-备注) | [大二](#-大二) | [AI入门](#-第五章-副本选择困难症机器学习-or-深度学习是什么是好吃的吗) | [复试指南](#11复试如何准备) | [Issues反馈](#-前言) |
 
 </div>
 
@@ -1617,6 +1625,40 @@
 | 📚 jlu-icicles | [https://github.com/thcxiker/jlu-icicles](https://github.com/thcxiker/jlu-icicles) |
 
 </div>
+
+---
+
+## 🌐 网页版说明
+
+网页版是把本 README 的内容整理成结构化数据后渲染的静态站点, 部署在 **GitHub Pages**, 无需任何构建工具。
+
+**仓库结构**
+
+```
+docs/                        # GitHub Pages 站点根目录
+├── index.html               # 页面骨架
+├── .nojekyll                # 关闭 Jekyll 处理
+└── assets/
+    ├── css/style.css        # 样式 (小清新配色 / 深浅色 / 响应式 / 打印)
+    ├── favicon.svg
+    └── js/
+        ├── data.courses.js  # 👈 课程数据 (87 门课)
+        ├── data.guide.js    # 👈 生存指北各章节正文
+        └── app.js           # 搜索 / 筛选 / 收藏 / 目录高亮等交互
+```
+
+**怎么维护**
+
+1. 修改课程: 编辑 `docs/assets/js/data.courses.js`, 按文件顶部注释的字段说明增删条目即可
+   - `lv` 是难度 1-5, `badges` 决定能被哪些标记筛选到 (`水课` / `易高分` / `408` / `推荐` / `慎选` …)
+   - 新增学期请同步 `window.JLU_TERMS`
+2. 修改指北长文: 编辑 `docs/assets/js/data.guide.js` 中的 `JLU_CH5` (AI 入门) / `JLU_CH6` (考研) / `JLU_CH7`
+3. 本地预览: `python -m http.server 8123 --directory docs`, 然后打开 <http://localhost:8123>
+4. 部署: 推送到 `main` 分支后, 在仓库 **Settings → Pages** 中选择
+   `Source: Deploy from a branch` → `Branch: main` → `Folder: /docs`, 保存后即可通过
+   <https://williampockey.github.io/JLU_CS/> 访问
+
+> 网页内容与 README 是**两套独立文件**, 改完 README 记得同步对应的数据文件 🤗
 
 ---
 
