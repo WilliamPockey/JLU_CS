@@ -65,7 +65,7 @@
 
   var BADGE_LABEL = {
     '水课': 'b-water', '易高分': 'b-easy', '408': 'b-408', '推荐': 'b-rec',
-    '慎选': 'b-warn', '挂科风险': 'b-warn',
+    '慎选': 'b-warn', '挂科风险': 'b-warn', '可能停开': 'b-dep',
   };
   var BADGE_TEXT = { '408': '408 四神', '水课': '水课', '易高分': '易高分' };
   function badgeClass(b) { return BADGE_LABEL[b] || ''; }
@@ -104,11 +104,11 @@
       return '<a class="link-chip" href="' + esc(l.u) + '" target="_blank" rel="noopener">' + hl(l.n) + '</a>';
     }).join('');
 
-    return '<article class="card open' + (fav ? ' faved' : '') + '" data-i="' + idx + '" data-t="' + esc(c.t) + '">' +
+    return '<article class="card open' + (fav ? ' faved' : '') + (c.dep ? ' is-dep' : '') + '" data-i="' + idx + '" data-t="' + esc(c.t) + '">' +
       '<div class="card-head">' +
         '<span class="course-icon">' + c.i + '</span>' +
         '<div class="course-main">' +
-          '<h3 class="course-title">' + hl(c.t) + '</h3>' +
+          '<h3 class="course-title">' + (c.dep ? '<s>' + hl(c.t) + '</s>' : hl(c.t)) + '</h3>' +
           '<div class="course-meta">' +
             '<span class="term-chip">' + term.icon + ' ' + term.y + term.s.replace('半学期', '') + '</span>' +
             '<span class="kind-pill kind-' + c.kind + '">' + KINDS[c.kind].label + '</span>' +
@@ -122,6 +122,7 @@
           '<button class="fold-btn" type="button" data-act="fold" title="展开 / 收起">▾</button>' +
         '</div>' +
       '</div>' +
+      (c.dep ? '<p class="dep-note">⚠️ ' + esc(c.dep) + '</p>' : '') +
       '<div class="card-body">' +
         (c.c ? '<div class="field"><span class="field-label">课程内容</span><div class="txt">' + hl(c.c) + '</div></div>' : '') +
         (c.e ? '<div class="field exam"><span class="field-label">考试形式</span><div class="txt">' + hl(c.e) + '</div></div>' : '') +
@@ -239,6 +240,7 @@
       ['408 四神', '考研 408 四门核心课'],
       ['推荐', '学长真心推荐'],
       ['慎选', '容易劝退, 选课前三思'],
+      ['可能停开', '新教学方案可能不再开设, 以实际课表为准'],
       ['答辩 / 小组 / 上机 / 开卷', '考核方式提示'],
     ];
     $('#legendBadge').innerHTML = defs.map(function (d) {
@@ -253,15 +255,16 @@
     var water = COURSES.filter(function (c) { return (c.badges || []).indexOf('水课') > -1; }).length;
     var easy = COURSES.filter(function (c) { return (c.badges || []).indexOf('易高分') > -1; }).length;
     var f408 = COURSES.filter(function (c) { return (c.badges || []).indexOf('408') > -1; }).length;
+    var dep = COURSES.filter(function (c) { return !!c.dep; }).length;
     $('#heroStats').innerHTML = [
       ['课程', COURSES.length], ['必修', req], ['选修', sel], ['实验环节', lab],
-      ['408 四神', f408], ['水课', water], ['易高分', easy],
+      ['408 四神', f408], ['水课', water], ['易高分', easy], ['可能停开', dep],
     ].map(function (d) { return '<span class="stat"><b>' + d[1] + '</b>' + d[0] + '</span>'; }).join('');
     $('#totalCount').textContent = COURSES.length;
   }
 
   function renderChapters() {
-    var anchor = { ch5: '#ch5', ch6: '#kaoyan', ch7: '#ch7' };
+    var anchor = { ch4: '#ch4', ch5: '#ch5', ch6: '#kaoyan' };
     $('#chapterList').innerHTML = (window.JLU_CHAPTERS || []).map(function (c) {
       var href = anchor[c.id];
       var tag = c.status === 'done' ? '<span class="ct" style="color:var(--mint)">✅ 已更新</span>'
@@ -299,9 +302,9 @@
   }
 
   function renderProse() {
+    $('#ch4Body').innerHTML = window.JLU_CH4 || '';
     $('#ch5Body').innerHTML = window.JLU_CH5 || '';
     $('#ch6Body').innerHTML = window.JLU_CH6 || '';
-    $('#ch7Body').innerHTML = window.JLU_CH7 || '';
   }
 
   function renderFavUI() {
@@ -543,7 +546,7 @@
   var SPY = ['#preface', '#notes', '#courses', '#guide', '#kaoyan', '#resources'];
   function spy() {
     var best = null, bestTop = -1e9;
-    SPY.concat(['#ch5', '#ch7', '#feedback']).forEach(function (s) {
+    SPY.concat(['#ch4', '#ch5', '#feedback']).forEach(function (s) {
       var el = $(s);
       if (!el) return;
       var top = el.getBoundingClientRect().top - 120;

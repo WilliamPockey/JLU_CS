@@ -8,11 +8,76 @@ window.JLU_CHAPTERS = [
   { id: 'ch1', no: '第一章', t: '重生之我是计院人', s: '', status: 'todo' },
   { id: 'ch2', no: '第二章', t: '技能树点歪了怎么办', s: '论如何按照个人发展路线选择课程', status: 'todo' },
   { id: 'ch3', no: '第三章', t: '图书馆的灯永远为谁而亮', s: '论大学生肝力值的可持续发展', status: 'todo' },
-  { id: 'ch4', no: '第四章', t: '通关彩蛋', s: '那些没有写进学生手册的生存秘籍', status: 'todo' },
+  { id: 'ch4', no: '第四章', t: '利用好 AI', s: '从糖包 🙄 到大鲸鱼 🤗', status: 'done' },
   { id: 'ch5', no: '第五章', t: '副本选择困难症', s: '机器学习 or 深度学习是什么?是好吃的吗?', status: 'done' },
   { id: 'ch6', no: '第六章', t: '闭关修炼指南', s: '当考研教室的灯亮成永夜时', status: 'done' },
   { id: 'ch7', no: '第七章', t: '体制内的隐藏关卡', s: '从申论模板到政审迷踪的通关密码', status: 'todo' },
 ];
+
+window.JLU_CH4 = `
+<p class="lead">自 2022 年末 GPT-3 问世以来, 到现在(26.9)的 GPT-6 Astra, 我一直是 AI 的深度使用者, 因此也深刻意识到学会利用 AI 的益处, 这里分享一下推荐的 AI 和工具, 可以使用他们辅助你的课程学习与生活兴趣。(比如做个自己的专属网站或小工具)。用法应该不用教, 就是跟他们对话 😉</p>
+
+<h4>🤖 推荐 AI</h4>
+<div class="tbl-wrap"><table class="tbl">
+<thead><tr><th>AI</th><th>特点</th><th>配套工具</th><th>推荐用法</th></tr></thead>
+<tbody>
+<tr>
+  <td class="c"><b>豆包</b></td>
+  <td>唐唐的(🤔 是在说她甜 🐎)</td>
+  <td>网页</td>
+  <td>信息搜索、论文对照翻译、常规课程辅导、简单代码编写</td>
+</tr>
+<tr>
+  <td class="c"><b>DeepSeek</b></td>
+  <td>比较前沿的智能, 而且网页免费、API 极其便宜</td>
+  <td>网页 / Zode / DeepSeek Harness</td>
+  <td>课设编写、中大项目开发</td>
+</tr>
+<tr>
+  <td class="c"><b>ChatGPT</b></td>
+  <td>顶尖聪明且在 Codex 中是全能选手</td>
+  <td>Codex</td>
+  <td>前沿科研、大项目开发、高难 BUG 解决</td>
+</tr>
+<tr>
+  <td class="c"><b>Claude</b></td>
+  <td>顶尖聪明</td>
+  <td>Claude Code</td>
+  <td>同 GPT(前提是不被封号 😝)</td>
+</tr>
+</tbody></table></div>
+
+<h4>🧰 工具 / Coding Plan</h4>
+<blockquote>然后推荐一些工具或 Coding / Token Plan</blockquote>
+<div class="tbl-wrap"><table class="tbl">
+<thead><tr><th>工具 / Coding Plan</th><th>特点</th><th>推荐用法</th><th>神秘的跳转连接</th></tr></thead>
+<tbody>
+<tr>
+  <td class="c"><b>WorkBuddy</b></td>
+  <td>聚合了很多开源模型, 每天可以免费使用一定额度</td>
+  <td>办公很好用, 比如写课设报告</td>
+  <td><a href="https://www.workbuddy.cn/events/invite?inviteCode=tlodf472gtvcq14" target="_blank" rel="noopener">官网跳转</a></td>
+</tr>
+<tr>
+  <td class="c"><b>OpenCode</b></td>
+  <td>聚合了绝大部分开源模型, 有 10 美元 / 月的 Plan</td>
+  <td>项目开发</td>
+  <td><a href="https://opencode.ai/" target="_blank" rel="noopener">官网跳转</a></td>
+</tr>
+<tr>
+  <td class="c"><b>CommandCode</b></td>
+  <td>聚合了绝大部分开源模型, 有 1 美元 / 月的 Plan, 可以用 10 美元的模型额度, 物超所值, 甚至可以用上 GPT-Luna</td>
+  <td>项目开发</td>
+  <td><a href="https://commandcode.ai/" target="_blank" rel="noopener">官网跳转</a></td>
+</tr>
+<tr>
+  <td class="c"><b>MiniMax</b></td>
+  <td>可能智商比不过糖包, 但是便宜</td>
+  <td>可以当 AutoClaw 给你跑自动任务或者当聊天机器人</td>
+  <td><a href="https://www.minimax.cn/" target="_blank" rel="noopener">官网跳转</a></td>
+</tr>
+</tbody></table></div>
+`;
 
 window.JLU_CH5 = `
 <p class="lead">众所周知, 基本所有院校的计 / 软院都可以被称为<b>第二人工智能学院</b>, 大部分老师都沉迷(~不是~)于人工智能的研究或结合人工智能的研究。作为一名计院学子, 人工智能当然也可以是你发展的一条非常重要的路线, 不论是提高自己阅历, 还是用来做课设, 人工智能都是一个非常亮眼, 且可能在未来成为必须的一项生存技能。因此, 我在这里着重介绍一下如何入门人工智能, 以及你可以选择的学习路线。</p>
@@ -274,10 +339,6 @@ window.JLU_CH6 = `
 <blockquote>考研从来不是必选项, 我希望你们是<b>因为目的明确地去考研, 而不是因为迷茫逃避选择考研</b></blockquote>
 <p>我的一个朋友, 本科期间选定就业, 刷了两遍 Leetcode, 在多家公司进行了实习, 目前在北京某厂搞后端, 年收入也有 40w+, 而他跟我说跟他同岗位的就是浙大的硕士 😭</p>
 <div class="callout star"><b>所以</b>你们在选择考研前一定要想好你为什么选择这条路, 这样才不会后悔自己花了一整年时间在考研这条分支路上</div>
-`;
-
-window.JLU_CH7 = `
-<div class="soon"><span class="soon-ico">📝</span><p>第七章「体制内的隐藏关卡」正在撰写中 —— 从申论模板到政审迷踪的通关密码, 敬请期待。</p></div>
 `;
 
 window.JLU_RESOURCES = [

@@ -493,6 +493,16 @@ img { max-width: 100%; display: block; }
 .badge.b-408 { background: var(--butter-soft); color: var(--butter); border-color: var(--butter-line); font-weight: 600; }
 .badge.b-rec { background: var(--lilac-soft); color: var(--lilac); border-color: var(--lilac-line); }
 .badge.b-warn { background: var(--blush-soft); color: var(--blush); border-color: var(--blush-line); }
+.badge.b-dep { background: var(--surface-soft); color: var(--ink-4); border-color: var(--line); text-decoration: line-through; }
+
+/* 可能停开的课程 (README 中标题带删除线) */
+.card.is-dep { background: linear-gradient(var(--surface-soft), var(--surface)); }
+.card.is-dep .course-title s { text-decoration-thickness: 1.5px; text-decoration-color: var(--blush); color: var(--ink-3); }
+.dep-note {
+  margin-top: 9px; font-size: 12.5px; color: var(--blush); line-height: 1.7;
+  background: var(--blush-soft); border: 1px dashed var(--blush-line);
+  border-radius: var(--r-s); padding: 5px 11px;
+}
 
 .card-tools { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
 .star-btn {
@@ -675,9 +685,6 @@ a.chapter-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-m);
 .branch li { font-size: 13px; display: flex; flex-direction: column; border-top: 1px dashed var(--line-2); padding-top: 7px; }
 .branch li:first-child { border-top: 0; padding-top: 0; }
 .branch li span { color: var(--ink-3); font-size: 12px; }
-
-.soon { text-align: center; padding: 34px 20px; color: var(--ink-3); font-size: 14px; }
-.soon-ico { display: block; font-size: 32px; margin-bottom: 8px; opacity: .75; }
 
 /* ---------- 13. 资源 / 页脚 ---------- */
 .res-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; }
